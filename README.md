@@ -5,7 +5,7 @@ Maintainer
     * Michal Zejmo <michalzejmo@gmail.com>
 Requirements
 ------------
-astropy == 1.2.1
+    * astropy == 1.2.1
 Installation
 ------------
     * Create link to program:
