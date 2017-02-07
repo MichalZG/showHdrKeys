@@ -8,6 +8,7 @@ import astropy.io.fits as fits
 
 warnings.filterwarnings('ignore')
 
+
 def load_keys(keys_file):
     try:
         with open(keys_file) as f:
@@ -59,7 +60,7 @@ if __name__ == '__main__':
     parser.add_argument('-m', '--miss', action='store_true',
                         help='If set program will  show only missing keys')
     parser.add_argument('--keys', type=str, default=os.path.join(
-        os.path.dirname(os.path.realpath(__file__)), 'keys.txt'), 
+        os.path.dirname(os.path.realpath(__file__)), 'keys.txt'),
         nargs='?', help='Dir to file with keys to show, '
                         'Default: keys.txt on program dir')
     parser.add_argument('--ext', type=str, default='.fits',
@@ -68,4 +69,3 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     main()
-
